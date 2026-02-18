@@ -10,7 +10,7 @@ export const SCREEN_PADDING_H = 20;
 export const SCREEN_PADDING_TOP = 48;
 
 /** Bottom nav height */
-export const BOTTOM_NAV_HEIGHT = 72;
+export const BOTTOM_NAV_HEIGHT = 56;
 
 /** Bottom nav padding: vertical, horizontal */
 export const BOTTOM_NAV_PADDING = { v: 12, h: 24 };

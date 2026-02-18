@@ -1,6 +1,7 @@
 import React from 'react';
 import { Icon } from '@/components/ui/icon';
 import { useColor } from '@/hooks/useColor';
+import { BOTTOM_NAV_HEIGHT } from '@/lib/design-tokens';
 import { Tabs } from 'expo-router';
 import {
   Calendar,
@@ -18,6 +19,7 @@ export default function WebTabsLayout() {
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: primary,
+        tabBarStyle: { height: BOTTOM_NAV_HEIGHT },
       }}
     >
       <Tabs.Screen

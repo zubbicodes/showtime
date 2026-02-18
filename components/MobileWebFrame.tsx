@@ -109,13 +109,13 @@ export function MobileWebFrame({ children }: { children: React.ReactNode }) {
         ))}
       </aside>
 
-      {/* Phone frame */}
+      {/* Phone frame – fixed height so bottom tab bar is never clipped */}
       <div
         style={{
           width: MOBILE_WIDTH,
           maxWidth: '100%',
           height: MOBILE_HEIGHT,
-          maxHeight: 'min(90vh, 844px)',
+          minHeight: MOBILE_HEIGHT,
           borderRadius: FRAME_RADIUS,
           overflow: 'hidden',
           boxShadow:
@@ -149,6 +149,7 @@ export function MobileWebFrame({ children }: { children: React.ReactNode }) {
             flexDirection: 'column',
             overflow: 'hidden',
             minHeight: 0,
+            paddingBottom: 16,
           }}
         >
           {children}
