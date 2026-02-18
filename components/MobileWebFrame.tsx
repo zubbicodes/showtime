@@ -4,7 +4,7 @@ import { Platform } from 'react-native';
 
 const MOBILE_WIDTH = 390;
 const MOBILE_HEIGHT = 844;
-const FRAME_RADIUS = 40;
+const FRAME_RADIUS = 20;
 const NOTCH_HEIGHT = 34;
 const SIDEBAR_WIDTH = 240;
 
